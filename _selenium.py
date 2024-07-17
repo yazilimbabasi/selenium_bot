@@ -8,7 +8,7 @@ import time
 driver = webdriver.Firefox()
 
 # Web sitesine gitme
-driver.get('https://marasfenlisesi.meb.k12.tr/icerikler/pusula-roket-takimimiz-calismalarina-son-hiz-devam-ediyor_15175149.html')
+driver.get('web adress')
 
 # Bekleme süresi ayarı
 wait = WebDriverWait(driver, 10)
@@ -17,7 +17,7 @@ while True:
     try:
         for i in range(360):
             # Butonun görünür olmasını bekleyin ve sonra tıklayın
-            button = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'begen')))
+            button = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, classs)))
             button.click()
             print(f"{i+1}. kez butona başarıyla tıklandı!")
             # Her tıklamadan sonra kısa bir bekleme süresi ekleyin
