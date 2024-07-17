@@ -17,7 +17,7 @@ while True:
     try:
         for i in range(360):
             # Butonun görünür olmasını bekleyin ve sonra tıklayın
-            button = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, classs)))
+            button = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "your class")))
             button.click()
             print(f"{i+1}. kez butona başarıyla tıklandı!")
             # Her tıklamadan sonra kısa bir bekleme süresi ekleyin
